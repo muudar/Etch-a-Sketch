@@ -29,6 +29,12 @@ function clearField(){
     while(field.firstChild){
         field.removeChild(field.lastChild);
     }
+    do{
+        n = prompt("Squares per side (max is 100): ");
+    }while(n < 0 || n > 100)
+    if(!n){
+        n = 16;
+    }
     loadField()
 }
 
