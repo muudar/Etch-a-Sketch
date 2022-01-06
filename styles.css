@@ -41,3 +41,8 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+
+.sizeDiv{
+    margin-top : 20px;
+    font-size : 20px;
+}

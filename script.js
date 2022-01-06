@@ -1,8 +1,7 @@
 const size = 480.0;
 let n = 16;
 const field = document.querySelector(".field");
-const btn = document.querySelector("button");
-
+const sizeDiv = document.querySelector(".sizeDiv");
 
 loadField();
 
@@ -23,6 +22,7 @@ function loadField(){
         }
         field.appendChild(column);
     }
+    sizeDiv.textContent = n + " x " + n;
 }
 
 function clearField(){
